@@ -1,9 +1,16 @@
 import './App.css'
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import AppHeader from "./components/AppHeader"
+import Home from './pages/Home'
+import AppFooter from './components/AppFooter.jsx'
 function App() {
 
   return (
-    <h1>Ciao</h1>
+    <>
+    <AppHeader/>
+    <Home/>
+    <AppFooter/>
+    </>
   )
 }
 
